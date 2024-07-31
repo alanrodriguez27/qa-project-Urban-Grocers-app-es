@@ -12,7 +12,7 @@ def create_kit(kit_body,auth_thoken):
     headers['Authorization'] = f'Bearer {auth_thoken}'
     return requests.post(configuration.URL_SERVICE + configuration.KITS_PATH,
                         json= kit_body,
-                        headers = data.headers
+                        headers = headers
                         )
 
 
